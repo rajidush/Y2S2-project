@@ -4,6 +4,7 @@ const Solar_recycle = () => {
   return (
     <div>
      <h1>sandaru</h1>
+     sandaru
     </div>
   )
 }

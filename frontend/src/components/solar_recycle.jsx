@@ -1,6 +1,6 @@
 import React from 'react'
 
-const solar_recycle = () => {
+const Solar_recycle = () => {
   return (
     <div>
       <h1>sandaru</h1>
@@ -8,4 +8,4 @@ const solar_recycle = () => {
   )
 }
 
-export default solar_recycle
+export default Solar_recycle

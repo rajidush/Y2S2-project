@@ -1,6 +1,15 @@
 import eBin from '../assets/images/e-waste-bin.jpg';
+import { useNavigate } from 'react-router-dom';
 
-const Example = () => {
+
+const HeroSection = () => {
+
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/dashboard')
+  }
+
   return (
     <section className="bg-white-50 py-12">
     <div className="container mx-auto flex flex-col md:flex-row items-center px-6">
@@ -16,7 +25,9 @@ const Example = () => {
         <p className="mt-4 text-gray-600">
           Track your waste management progress, schedule pickups effortlessly, and earn rewards for sustainable practices!
         </p>
-        <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-500">
+        <button
+          onClick={handleGetStarted}
+          className="mt-6 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-500">
           Get Started Now
         </button>
       </div>
@@ -25,4 +36,4 @@ const Example = () => {
   )
 }
 
-export default Example
+export default HeroSection

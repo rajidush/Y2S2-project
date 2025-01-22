@@ -1,19 +1,18 @@
-import Features from './components/Features'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import HeroSection from './components/HeroSection'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import UserDashboard from './components/UserDashboard'
 import './index.css'
 function App() {
   
 
   return (
-    <>
-      <Header />
-      <HeroSection />
-      <Features />
-      <Footer />
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/dashboard' element={<UserDashboard/>}/>
+      </Routes>
        
-    </>
+    </Router>
   )
 }
 
